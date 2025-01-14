@@ -1,0 +1,40 @@
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.details {
+  padding-bottom: 1em;
+  border-bottom: 2px solid var(--border);
+}
+
+.detail-item {
+  column-gap: 0.36em;
+}
+
+.content-etherium {
+  letter-spacing: 0.8px;
+  font-weight: var(--bol-wgt);
+  color: var(--accent);
+}
+
+.profile {
+  padding-top: 1em;
+}
+
+.profile-img {
+  width: 36px;
+  flex: 0.1;
+  margin-right: 1em;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
+
+.message {
+  flex: 1;
+}
+.message > .profile-name {
+  font-weight: var(--med-wgt);
+  color: var(--white);
+}

@@ -25,5 +25,66 @@
   /* Variables */
   --reg-wgt: 300;
   --med-wgt: 400;
-  --bol-wgt: 700;
+  --bol-wgt: 600;
+  --radius: 20px;
+  --shadow: 0 0 12px 8px rgb(0, 0, 0, 14%);
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--main-bg);
+}
+
+/* NFT card */
+article.card-container {
+  padding: 1.25em;
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.card-container {
+  max-width: 360px;
+}
+
+/* Card Image Styles */
+.card-image-container {
+  overflow: hidden;
+  border-radius: var(--radius);
+  background-image: url("./images/image-equilibrium.jpg");
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 1.25rem;
+}
+
+.card-image-container::after {
+  content: "";
+  display: block;
+  width: 100%;
+  /* Size of the Image [Vertically] */
+  height: 288px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+/* Card Content Styles */
+.card-details {
+  color: var(--txt);
+  font-weight: var(--reg-wgt);
+}
+
+h1.headline {
+  color: var(--white);
+  font-size: 1.25;
+  font-weight: var(--bol-wgt);
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.about-card {
+  line-height: 1.4;
+  margin-bottom: 24px;
 }

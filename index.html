@@ -16,13 +16,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
       rel="stylesheet"
     />
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="./css/helper.css" />
+    <link rel="stylesheet" href="./css/special.css" />
     <link rel="stylesheet" href="./css/queries.css" />
 
     <title>Frontend Mentor | NFT preview card component</title>
@@ -30,13 +30,8 @@
   <body>
     <!-- NFT Card Container -->
     <article class="card-container" aria-label="nft card">
-      <div class="card-image" aria-label="image of the NFT">
-        <img
-          src="./images/image-equilibrium.jpg"
-          alt="equillibrium illustration"
-          class="equil-image"
-        />
-      </div>
+      <!-- Image was Added as Background -->
+      <div class="card-image-container" aria-label="image of the NFT"></div>
 
       <!-- Details Block -->
       <div class="card-details">
@@ -44,30 +39,33 @@
         <p class="about-card">
           Our Equillibrium collection promotes balance and calm.
         </p>
-        <div class="row">
-          <div class="detail-item">
+        <div class="row details">
+          <div class="row detail-item">
             <img
               src="./images/icon-ethereum.svg"
               alt="etherium icon"
               class="feature-image"
             />
-            <span class="content-etherium">0.041ETH</span>
+            <span class="content content-etherium">0.041 ETH</span>
           </div>
-          <div class="detail-item">
+          <div class="row detail-item">
             <img
               src="./images/icon-clock.svg"
               alt="clock icon"
               class="feature-image"
             />
-            <span class="content-remain-time">0.041ETH</span>
+            <span class="content content-remain-time">3 days left</span>
           </div>
         </div>
-        <div class="row">
+        <div class="row profile">
           <img
             src="./images/image-avatar.png"
             alt="jules wyvern profile picture"
+            class="profile-img"
           />
-          <p>Creation of <strong class="profile-name">Jules Wyvern</strong></p>
+          <p class="message">
+            Creation of <strong class="profile-name">Jules Wyvern</strong>
+          </p>
         </div>
       </div>
     </article>
