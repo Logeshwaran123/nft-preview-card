@@ -49,7 +49,7 @@ In this I made the Hovering effect being overlayed on the image using only CSS p
 
 ### IMPORTANT LINKS
 
-| Source    | Link                            |
-| --------- | ------------------------------- |
-| Live Site | [URL for GitHub Page](https://) |
-| Code URL  | [Repo in GitHub](https://)      |
+| Source    | Link                                                                      |
+| --------- | ------------------------------------------------------------------------- |
+| Live Site | [URL for GitHub Page](https://logeshwaran123.github.io/nft-preview-card/) |
+| Code URL  | [Repo in GitHub](https://github.com/Logeshwaran123/nft-preview-card.git)  |
