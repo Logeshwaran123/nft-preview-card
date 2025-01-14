@@ -40,24 +40,40 @@ body {
 
 /* NFT card */
 article.card-container {
+  max-width: 360px;
   padding: 1.25em;
   background: var(--card-bg);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
 
-.card-container {
-  max-width: 360px;
-}
-
 /* Card Image Styles */
 .card-image-container {
   overflow: hidden;
   border-radius: var(--radius);
-  background-image: url("./images/image-equilibrium.jpg");
+  margin-bottom: 1.25rem;
+  position: relative;
+  cursor: pointer;
+
+  /* --- Background Image Style */
   background-position: center;
   background-size: cover;
-  margin-bottom: 1.25rem;
+  background-image: url("./images/image-equilibrium.jpg");
+}
+
+img.view-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.44s ease-in-out;
+}
+
+.card-image-container:hover > img.view-icon {
+  opacity: 1;
+  z-index: 1;
 }
 
 .card-image-container::after {
@@ -66,8 +82,15 @@ article.card-container {
   width: 100%;
   /* Size of the Image [Vertically] */
   height: 288px;
-  object-fit: cover;
-  object-position: 50% 50%;
+
+  /* Active Initials */
+  opacity: 0;
+  transition: all 0.33s ease-in-out;
+}
+
+.card-image-container:hover::after {
+  opacity: 0.24;
+  background-color: var(--accent);
 }
 
 /* Card Content Styles */
@@ -80,7 +103,7 @@ h1.headline {
   color: var(--white);
   font-size: 1.25;
   font-weight: var(--bol-wgt);
-  margin-bottom: 12px;
+  margin-bottom: 24px;
   line-height: 1.2;
 }
 

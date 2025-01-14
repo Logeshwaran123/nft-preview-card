@@ -38,3 +38,15 @@
   font-weight: var(--med-wgt);
   color: var(--white);
 }
+
+/* Active States */
+.message > .profile-name,
+h1.headline {
+  cursor: pointer;
+  transition: color 0.33s ease-in-out;
+}
+
+h1.headline:hover,
+.message > .profile-name:hover {
+  color: var(--accent);
+}
