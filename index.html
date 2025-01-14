@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/helper.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
+
+    <title>Frontend Mentor | NFT preview card component</title>
+  </head>
+  <body>
+    <!-- NFT Card Container -->
+    <article class="card-container" aria-label="nft card">
+      <div class="card-image" aria-label="image of the NFT">
+        <img
+          src="./images/image-equilibrium.jpg"
+          alt="equillibrium illustration"
+          class="equil-image"
+        />
+      </div>
+
+      <!-- Details Block -->
+      <div class="card-details">
+        <h1 class="headline">Equillibrium #3249</h1>
+        <p class="about-card">
+          Our Equillibrium collection promotes balance and calm.
+        </p>
+        <div class="row">
+          <div class="detail-item">
+            <img
+              src="./images/icon-ethereum.svg"
+              alt="etherium icon"
+              class="feature-image"
+            />
+            <span class="content-etherium">0.041ETH</span>
+          </div>
+          <div class="detail-item">
+            <img
+              src="./images/icon-clock.svg"
+              alt="clock icon"
+              class="feature-image"
+            />
+            <span class="content-remain-time">0.041ETH</span>
+          </div>
+        </div>
+        <div class="row">
+          <img
+            src="./images/image-avatar.png"
+            alt="jules wyvern profile picture"
+          />
+          <p>Creation of <strong class="profile-name">Jules Wyvern</strong></p>
+        </div>
+      </div>
+    </article>
+  </body>
+</html>
